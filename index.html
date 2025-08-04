@@ -1,954 +1,1336 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Muhammad Ilham Ghazali - Flutter Developer</title>
+    <meta
+      content="Flutter Developer Portfolio - Muhammad Ilham Ghazali"
+      name="description"
+    />
+    <meta
+      content="Flutter, Mobile Development, Dart, Firebase"
+      name="keywords"
+    />
 
-  <title>Muhammad Ilham Ghazali Portofolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-</head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="modern-header">
+      <div class="container">
+        <div class="header-content">
+          <div class="profile-section" data-aos="fade-up" data-aos-delay="200">
+            <div class="profile-image">
+              <img
+                src="assets/img/certifications/profile.png"
+                alt="Muhammad Ilham Ghazali"
+              />
+              <div class="profile-badge">
+                <i class="ri-flutter-fill"></i>
+                <span>Flutter Expert</span>
+              </div>
+            </div>
+          </div>
 
-<body>
+          <div class="hero-content" data-aos="fade-up" data-aos-delay="400">
+            <h1 class="hero-title">
+              <span class="greeting">Hello, I'm</span>
+              <span class="name">Muhammad Ilham Ghazali</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              <span class="typing-text">I'm a passionate </span>
+              <span class="highlight">Flutter Developer</span>
+              <span class="typing-text"> from Indonesia</span>
+            </h2>
+            <p class="hero-description">
+              Crafting beautiful, performant mobile experiences with Flutter.
+              Specialized in cross-platform development, state management, and
+              modern UI/UX design.
+            </p>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container">
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn btn-primary">
+                <i class="ri-eye-line"></i>
+                View My Work
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="ri-message-3-line"></i>
+                Get In Touch
+              </a>
+            </div>
+          </div>
 
-      <h1><a href="index.html">Muhammad Ilham Ghazali</a></h1>
-      <h2>I'm a passionate <span>Multi Platfrom Developer</span> from Indonesia </h2>
+          <nav id="navbar" class="navbar modern-navbar">
+            <ul class="nav-menu">
+              <li><a class="nav-link active" href="#header">Home</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#education">Education</a></li>
+              <li><a class="nav-link" href="#resume">Experience</a></li>
+              <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+              <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-nav-toggle">
+              <i class="bi bi-list"></i>
+            </div>
+          </nav>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link active" href="#header">Home</a></li>
+          <div class="social-links modern-social">
+            <a
+              href="https://www.instagram.com/ilham_ghaza/"
+              target="_blank"
+              class="social-link instagram"
+            >
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/muhammadilhamghazali/"
+              target="_blank"
+              class="social-link linkedin"
+            >
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/IlhamGhaza"
+              target="_blank"
+              class="social-link github"
+            >
+              <i class="bi bi-github"></i>
+            </a>
+            <a
+              href="mailto:m.ilhamghazali@gmail.com"
+              target="_blank"
+              class="social-link email"
+            >
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </header>
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about modern-about">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Me</h2>
+          <p>Get to know me better</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="about-image">
+              <img
+                src="assets/img/certifications/profile.png"
+                class="img-fluid"
+                alt="Profile Picture"
+              />
+              <div class="experience-badge">
+                <span class="years">1+</span>
+                <span class="text">Years of Experience</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-6 pt-4 pt-lg-0 content"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
+            <div class="about-content">
+              <h3 class="about-title">Junior Mobile Engineer</h3>
+              <div class="expertise-badge">
+                <i class="ri-flutter-fill"></i>
+                <span>Flutter Developer Expert</span>
+              </div>
+
+              <p class="about-description">
+                Results-driven Mobile Engineer passionate about creating
+                seamless, user-friendly mobile experiences. Proficient in both
+                iOS and Android development, with a strong focus on delivering
+                high-quality and scalable solutions.
+              </p>
+
+              <div class="about-highlights">
+                <div
+                  class="highlight-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <div class="highlight-icon">
+                    <i class="ri-flutter-fill"></i>
+                  </div>
+                  <div class="highlight-content">
+                    <h4>Flutter Expertise</h4>
+                    <p>
+                      Specialized in Flutter development with expertise in state
+                      management, custom widgets, API integration, and Firebase
+                      services.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="highlight-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <div class="highlight-icon">
+                    <i class="ri-award-fill"></i>
+                  </div>
+                  <div class="highlight-content">
+                    <h4>Key Achievements</h4>
+                    <p>
+                      Flutter Developer Expert certification, published apps on
+                      Google Play Store, and strong background in mobile app
+                      architecture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-info">
+                <div class="info-item">
+                  <i class="ri-phone-line"></i>
+                  <span>+62 8131 5244 423</span>
+                </div>
+                <div class="info-item">
+                  <i class="ri-mail-line"></i>
+                  <span>m.ilhamghazali@gmail.com</span>
+                </div>
+                <div class="info-item">
+                  <i class="ri-map-pin-line"></i>
+                  <span>Bogor, West Java, Indonesia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills modern-skills">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Skills & Expertise</h2>
+          <p>My technical proficiency</p>
+        </div>
+
+        <!--  -->
+        <!-- <div class="tech-item" data-aos="zoom-in" data-aos-delay="1000">
+          <i class="ri-code-s-fill"></i>
+          <h4>Dart</h4>
+        </div> -->
+        <div class="technologies-grid" data-aos="fade-up" data-aos-delay="900">
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1000">
+            <i class="ri-flutter-fill"></i>
+            <h4>Flutter</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1000">
+            <i class="ri-code-fill"></i>
+            <h4>Dart</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1500">
+            <i class="ri-database-2-line"></i>
+            <h4>SQL</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1600">
+            <i class="ri-code-fill"></i>
+            <h4>Laravel</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1000">
+            <i class="ri-code-s-fill"></i>
+            <h4>PHP</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1700">
+            <i class="ri-global-line"></i>
+            <h4>RESTful API</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1800">
+            <i class="ri-git-branch-line"></i>
+            <h4>Git</h4>
+          </div>
+          <div class="tech-item" data-aos="zoom-in" data-aos-delay="1900">
+            <i class="ri-test-tube-line"></i>
+            <h4>Postman</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Education Section ======= -->
+    <section id="education" class="education modern-education">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Education & Certifications</h2>
+          <p>My learning journey</p>
+        </div>
+
+        <div class="education-timeline" data-aos="fade-up" data-aos-delay="200">
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <img src="assets/img/gundar.jpg" alt="Gunadarma University" />
+                <div class="timeline-info">
+                  <h3>Gunadarma University Jakarta</h3>
+                  <p class="timeline-period">Sep 2022 - Present</p>
+                  <p class="timeline-degree">
+                    Bachelor's Degree in Information System - S.Si.
+                  </p>
+                  <p class="timeline-gpa">
+                    Grade: 3.66/4.00 - 7th semester (GPA)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="certifications-grid"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img
+              src="assets/img/certifications/dicodingFML.png"
+              alt="Machine Learning Flutter"
+            />
+            <div class="certification-info">
+              <h4>Belajar Penerapan Machine Learning untuk Flutter</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicodingFML.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/N9ZO9WWJ6XG5"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <img
+              src="assets/img/certifications/dicodingFExpert.png"
+              alt="Flutter Developer Expert"
+            />
+            <div class="certification-info">
+              <h4>Menjadi Flutter Developer Expert</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicodingFExpert.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/ERZREQDOQXYV"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            <img
+              src="assets/img/certifications/dicoding-FInter.png"
+              alt="Flutter Developer Intermediate"
+            />
+            <div class="certification-info">
+              <h4>Menjadi Flutter Developer Intermediate</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-FInter.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/L4PQENK6OPO1"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            <img
+              src="assets/img/certifications/Dicodingflutter2.png"
+              alt="Fundamental Flutter"
+            />
+            <div class="certification-info">
+              <h4>Belajar Fundamental Aplikasi Flutter</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/Dicodingflutter2.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/MRZMN0W2RPYQ"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="900"
+          >
+            <img
+              src="assets/img/certifications/dicoding-flutter1.png"
+              alt="Flutter for Beginners"
+            />
+            <div class="certification-info">
+              <h4>Belajar Membuat Aplikasi Flutter untuk Pemula</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-flutter1.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/81P2N089YXOY"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+          >
+            <img
+              src="assets/img/certifications/dicoding-dart.png"
+              alt="Dart Programming"
+            />
+            <div class="certification-info">
+              <h4>Memulai Pemrograman dengan Dart</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-dart.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/98XWVRNKLPM3"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1100"
+          >
+            <img
+              src="assets/img/certifications/Dicoding.com-java.png"
+              alt="Java Programming"
+            />
+            <div class="certification-info">
+              <h4>Memulai Pemrograman dengan Java</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/Dicoding.com-java.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/6RPNWJ2G4P2M"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1200"
+          >
+            <img
+              src="assets/img/certifications/Dicoding.com-Solid.png"
+              alt="SOLID Principles"
+            />
+            <div class="certification-info">
+              <h4>Belajar Prinsip Pemrograman SOLID</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/Dicoding.com-Solid.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/NVP7890GOXR0"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1300"
+          >
+            <img
+              src="assets/img/certifications/dicoding-javascript.png"
+              alt="JavaScript Programming"
+            />
+            <div class="certification-info">
+              <h4>Memulai Pemrograman Dengan JavaScript</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-javascript.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/53XEN6RM0XRN"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1400"
+          >
+            <img
+              src="assets/img/certifications/dicoding-sql.png"
+              alt="SQL Database"
+            />
+            <div class="certification-info">
+              <h4>Belajar Dasar Structured Query Language (SQL)</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-sql.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/2VX3JMN5JPYQ"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1500"
+          >
+            <img
+              src="assets/img/certifications/dicoding-belajarAi.png"
+              alt="AI Basics"
+            />
+            <div class="certification-info">
+              <h4>Belajar Dasar AI</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-belajarAi.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/07Z6V7WEJXQRL"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1600"
+          >
+            <img
+              src="assets/img/certifications/dicoding-github.png"
+              alt="Git GitHub"
+            />
+            <div class="certification-info">
+              <h4>Belajar Dasar Git dengan GitHub</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/dicoding-github.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.dicoding.com/certificates/07Z6VDLEYXQR"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="certification-item"
+            data-aos="zoom-in"
+            data-aos-delay="1700"
+          >
+            <img
+              src="assets/img/certifications/gplay.png"
+              alt="Google Play Academy"
+            />
+            <div class="certification-info">
+              <h4>Google Play Academy - Store Listing Certificate</h4>
+              <div class="certification-links">
+                <a
+                  href="assets/img/certifications/gplay.png"
+                  data-gallery="certificateGallery"
+                  data-glightbox="type: image"
+                >
+                  <i class="bx bx-zoom-in"></i>
+                </a>
+                <a
+                  href="https://www.credential.net/ee908239-7aae-4f78-8f80-bfd2db60ba9b"
+                  target="_blank"
+                >
+                  <i class="bx bx-link"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume modern-resume">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>My professional journey</p>
+        </div>
+
+        <div class="resume-content">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="resume-section">
+                <h3 class="resume-title">Summary</h3>
+                <div class="resume-item">
+                  <h4>Muhammad Ilham Ghazali</h4>
+                  <p class="resume-description">
+                    Results-driven Junior Mobile Engineer with a passion for
+                    creating seamless, user-friendly experiences. Proficient in
+                    iOS and Android development, adept at troubleshooting, and
+                    committed to staying current with emerging mobile
+                    technologies.
+                  </p>
+                  <div class="resume-contact">
+                    <div class="contact-item">
+                      <i class="ri-map-pin-line"></i>
+                      <span>Indonesia, Bogor, West Java</span>
+                    </div>
+                    <div class="contact-item">
+                      <i class="ri-mail-line"></i>
+                      <span>m.ilhamghazali@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                      <i class="ri-phone-line"></i>
+                      <span>+62 813 1524 4423</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- Education -->
+                <h3 class="resume-title">Education</h3>
+                <div class="resume-item">
+                  <h4>Undergraduate Information System</h4>
+                  <h5>Jan 2022 - Jan 2026</h5>
+                  <p class="institution">Universitas Gunadarma</p>
+                  <p class="description">
+                    Achieved a GPA of 3.64, focusing on Database Management,
+                    Object-Oriented Programming, and Software Development
+                    Principles. Completed major projects including a Point of
+                    Sale (POS) Application and a BMI tracking web application.
+                  </p>
+                </div>
+
+                <div class="resume-item">
+                  <h4>Independent Study</h4>
+                  <h5>Jun 2023 - Present</h5>
+                  <p class="institution">Dicoding Academy</p>
+                  <p class="description">
+                    Completed certifications in Dart programming, SOLID
+                    principles, and SQL. Developed multiple projects, such as an
+                    online attendance application and a POS system.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="resume-section">
+                <h3 class="resume-title">Professional Experience</h3>
+                <div class="resume-item">
+                  <h4>Mobile Developer</h4>
+                  <h5>Mar 2025 - Jun 2025</h5>
+                  <p class="institution">Kita Bantu Indonesia</p>
+                  <ul class="achievements">
+                    <li>Led a mobile development team of 4 members</li>
+                    <li>Improved user experience consistency by 30%</li>
+                    <li>Converted 30+ UI/UX screens from Figma</li>
+                    <li>Reduced integration bugs by 40%</li>
+                  </ul>
+                </div>
+                <div class="resume-item">
+                  <h4>Assistant & Tutor</h4>
+                  <h5>Oct 2023 - Present</h5>
+                  <p class="institution">
+                    Information Systems Laboratory, Gunadarma
+                  </p>
+                  <ul class="achievements">
+                    <li>
+                      Conducted tutorials on C programming language, improving
+                      student lab scores by 25%.
+                    </li>
+                    <li>
+                      Developed reusable instructional materials for future lab
+                      sessions.
+                    </li>
+                    <li>
+                      Provided technical support to optimize lab systems,
+                      reducing downtime by 15%.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services modern-services">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>What I can do for you</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="ri-flutter-fill"></i>
+            </div>
+            <h4>Flutter App Development</h4>
+            <p>
+              Custom Flutter applications for iOS and Android with modern UI/UX
+              design, state management, and seamless user experience.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <i class="ri-firebase-fill"></i>
+            </div>
+            <h4>Firebase Integration</h4>
+            <p>
+              Complete Firebase integration including authentication, real-time
+              database, cloud functions, and push notifications.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon">
+              <i class="ri-api-fill"></i>
+            </div>
+            <h4>API Integration</h4>
+            <p>
+              RESTful API integration with Laravel backend, custom API
+              development, and third-party service integration.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon">
+              <i class="ri-smartphone-fill"></i>
+            </div>
+            <h4>Cross-Platform Development</h4>
+            <p>
+              Single codebase applications that work seamlessly across iOS,
+              Android, and web platforms.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-icon">
+              <i class="ri-code-s-slash-line"></i>
+            </div>
+            <h4>Custom Widgets</h4>
+            <p>
+              Custom Flutter widgets and reusable components to enhance app
+              functionality and user interface.
+            </p>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-icon">
+              <i class="ri-settings-3-fill"></i>
+            </div>
+            <h4>App Maintenance</h4>
+            <p>
+              Ongoing app maintenance, updates, bug fixes, and performance
+              optimization for existing Flutter applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio modern-portfolio">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>My latest works</p>
+        </div>
+
+        <!-- <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="200">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">Mobile</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div> -->
+
+        <div class="portfolio-grid">
+          <!-- MyPOS - Flutter POS App -->
+          <div
+            class="portfolio-filters filter-app"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="assets/img/porto/myposs.png"
+                  alt="MyPOS - Flutter POS App"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-links">
+                    <a
+                      href="https://youtu.be/uFyuiyW1q6A"
+                      target="_blank"
+                      class="portfolio-link"
+                    >
+                      <i class="ri-play-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="platform-badge">
+                  <span class="platform-badge-text">Mobile</span>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>MyPOS - Flutter POS App</h4>
+                <p>
+                  Aplikasi Kasir untuk Manajemen Toko Pertanian dengan fitur
+                  inventory management, sales tracking, dan reporting system.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Laravel</span>
+                  <span class="tech-badge">MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LockFlare - Cryptographic App -->
+          <div
+            class="portfolio-filters filter-app"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            style="width: 100%"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="assets/img/porto/lockfire.png"
+                  alt="LockFlare - Cryptographic App"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-links">
+                    <a
+                      href="https://youtube.com/shorts/c0JhdmluhJc?si=SLZx66IYkRL2kasU"
+                      target="_blank"
+                      class="portfolio-link"
+                    >
+                      <i class="ri-play-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+                 <div class="platform-badge">
+                  <span class="platform-badge-text">Mobile</span>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>LockFlare - Cryptographic App</h4>
+                <p>
+                  Flutter application demonstrating various cryptographic
+                  algorithms including encryption, decryption, and hash
+                  functions with modern UI design.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Dart</span>
+                  <span class="tech-badge">Cryptography</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Task - Flutter Task App -->
+          <div
+            class="portfolio-filters filter-app"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            style="width: 100%"
+          >
+            <div class="portfolio-card">
+              <div class="portfolio-image">
+                <img
+                  src="assets/img/porto/tasks.png"
+                  alt="Task - Flutter Task App"
+                />
+                <div class="portfolio-overlay">
+                  <div class="portfolio-links">
+                    <a
+                      href="https://youtu.be/6mpTsdOo7ho?si=5xA0rYIlNt5Nna2g"
+                      target="_blank"
+                      class="portfolio-link"
+                    >
+                      <i class="ri-play-circle-line"></i>
+                    </a>
+                  </div>
+                </div>
+                 <div class="platform-badge">
+                  <span class="platform-badge-text">Mobile</span>
+                </div>
+              </div>
+              <div class="portfolio-content">
+                <h4>Task - Flutter Task App</h4>
+                <p>
+                  Flutter task management application with Firebase backend,
+                  featuring real-time synchronization, user authentication, and
+                  intuitive task organization.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-badge">Flutter</span>
+                  <span class="tech-badge">Firebase</span>
+                  <span class="tech-badge">Real-time DB</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact modern-contact">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contact</h2>
+          <p>Let's work together</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="ri-mail-line"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Email</h4>
+                    <p>m.ilhamghazali@gmail.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="ri-phone-line"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Phone</h4>
+                    <p>+62 8131 5244 423</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Location</h4>
+                    <p>Bogor, West Java, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="social-profiles">
+                <h4>Connect with me</h4>
+                <div class="social-links">
+                  <a
+                    href="https://www.instagram.com/ilham_ghaza/"
+                    target="_blank"
+                    class="social-link instagram"
+                  >
+                    <i class="bi bi-instagram"></i>
+                    <span>Instagram</span>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/muhammadilhamghazali/"
+                    target="_blank"
+                    class="social-link linkedin"
+                  >
+                    <i class="bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    href="https://github.com/IlhamGhaza"
+                    target="_blank"
+                    class="social-link github"
+                  >
+                    <i class="bi bi-github"></i>
+                    <span>GitHub</span>
+                  </a>
+                  <a
+                    href="mailto:m.ilhamghazali@gmail.com"
+                    target="_blank"
+                    class="social-link email"
+                  >
+                    <i class="bi bi-envelope-fill"></i>
+                    <span>Email</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="modern-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            Muhammad Ilham Ghazali. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Simple Popup Structure -->
+    <div id="simplePopup" class="simple-popup">
+      <div class="popup-box">
+        <button class="close-btn">×</button>
+        <h3>Navigation</h3>
+        <ul class="popup-nav-menu">
+          <li><a class="nav-link" href="#header">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#education">Educations</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
           <li><a class="nav-link" href="#resume">Experience</a></li>
-          <!-- <li><a class="nav-link" href="#Project">Project</a></li> -->
           <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <div class="social-links">
-        <!-- <a href="https://twitter.com/" target="_blank" class="twitter"><i class="bi bi-twitter"></i> -->
-        <!-- </a> -->
-        <a href="https://www.instagram.com/ilham_ghaza/" target="_blank" class="instagram"><i class="bi bi-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/muhammadilhamghazali/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://github.com/IlhamGhaza" target="_blank" class="github"><i class="bi bi-github"></i></a>
-        <a href="mailto:milhamghazali@gmail.com" target="_blank" class="gmail"><i class="bi bi-envelope-fill"></i></a>
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= About Section ======= -->
-  <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
-      <div class="section-title">
-        <h2>About</h2>
-        <p>Learn more about me</p>
-      </div>
-
-      <div class="row">
-    <div class="col-lg-4" data-aos="fade-right">
-        <img src="assets/img/certifications/profile.png" class="img-fluid" alt="Profile Picture">
-    </div>
-    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-        <h3>Junior Mobile Engineer</h3>
-        <p class="fst-italic">
-            Results-driven Mobile Engineer passionate about creating seamless, user-friendly mobile experiences. Proficient in both iOS and Android development, with a strong focus on delivering high-quality and scalable solutions.
-        </p>
-        <div class="row">
-            <div class="col-lg-6">
-                <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+62 8131 5244 423</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="https://ilhamghaza.github.io" target="_blank">ilhamghaza.github.io</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/muhammadilhamghazali" target="_blank">linkedin.com/in/muhammadilhamghazali</a></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>GitHub:</strong> <a href="https://github.com/IlhamGhaza" target="_blank">github.com/IlhamGhaza</a></li>
-                    <li>
-                        <i class="bi bi-chevron-right"></i>
-                        <strong>CV:</strong> <a href="https://drive.google.com/file/d/17CZsv2l9TX2QXm5AxNDJ9qyaInf7dcYi/view?usp=sharing" target="_blank">View CV</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-6">
-                <ul>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>m.ilhamghazali@gmail.com</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Undergraduate</span></li>
-                    <li><i class="bi bi-chevron-right"></i> <strong>Location:</strong> <span>Bogor, West Java, Indonesia</span></li>
-                </ul>
-            </div>
-        </div>
-        <p>
-            With extensive experience in mobile app development, I have successfully built and deployed cross-platform applications using Flutter, integrated RESTful APIs, and implemented secure, scalable backend systems. My focus lies in improving efficiency and user engagement through innovative and well-designed software solutions.
-        </p>
-    </div>
-</div>
-
-    <!-- End About Me -->
-    
-     <!-- ======= Counts =======  -->
-    <!-- <div class="counts container">
-
-      <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-          <div class="count-box">
-            <i class="bi bi-emoji-smile"></i>
-            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Happy Clients</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-          <div class="count-box">
-            <i class="bi bi-journal-richtext"></i>
-            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Projects</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-headset"></i>
-            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Hours Of Support</p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-          <div class="count-box">
-            <i class="bi bi-award"></i>
-            <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-            <p>Awards</p>
-          </div>
-        </div>
-
-      </div>
-    </div> -->
-    
-    <!-- ======= Interests ======= -->
-    <!-- ======= Skills & Tools ======= -->
-<div class="interests container">
-
-    <div class="section-title">
-        <h2>Skills & Tools</h2>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-3 col-md-4">
-            <a href="https://www.php.net/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-code-s-fill" style="color: #8993be;"></i>
-                    <h3>PHP</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a href="https://www.javascript.com/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-code-s-slash-line" style="color: #f7df1e;"></i>
-                    <h3>JavaScript</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a href="https://dart.dev/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-code-s-slash-line" style="color: #5578ff;"></i>
-                    <h3>Dart</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-code-s-slash-line" style="color: #a8b9cc;"></i>
-                    <h3>C</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <a href="https://docs.oracle.com/en/java/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-code-s-slash-line" style="color: #e80368;"></i>
-                    <h3>Java</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <a href="https://www.w3schools.com/sql/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-database-2-line" style="color: #f29111;"></i>
-                    <h3>SQL</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <a href="https://flutter.dev/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-flutter-fill" style="color: #1c7d32;"></i>
-                    <h3>Flutter</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <a href="https://laravel.com/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-code-s-slash-line" style="color: #ff2d20;"></i>
-                    <h3>Laravel</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-                <i class="ri-global-line" style="color: #b5f10f;"></i>
-                <h3>RESTful API</h3>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <a href="https://git-scm.com/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-git-branch-line" style="color: #f1502f;"></i>
-                    <h3>Git</h3>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-            <a href="https://www.postman.com/" target="_blank" style="text-decoration: none;">
-                <div class="icon-box">
-                    <i class="ri-test-tube-line" style="color: #ff6c37;"></i>
-                    <h3>Postman</h3>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- End Skills & Tools -->
-
-    <!-- ======= Testimonials ======= -->
-    <div class="testimonials container">
-
-      <div class="section-title">
-        <h2>Testimonials</h2>
-      </div>
-
-      <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper">
-
-          <div class="swiper-slide">
-            <div class="testimonial-item">
-            <!--`
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-              <h3>Saul Goodman</h3>
-              <h4>Ceo &amp; Founder</h4>
-            </div>
-            -->
-          </div> <!-- End testimonial item -->
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-
-      <div class="owl-carousel testimonials-carousel">
-
-      </div>
-
-    </div><!-- End Testimonials  -->
-
-  </section><!-- End About Section -->
-   <!-- ======= Education Section ======= -->
-   <section id="education" class="education">
-    <div class="container">
-      <div class="section-title">
-        <h2>Education</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/gundar.jpg" class="img-fluid" alt="">
-            <h5><a href="https://gunadarma.ac.id/" target="_blank">Gunadarma University Jakarta</a></h5>
-            <h6>Sep 2022 - Present</h6>
-            <p><em>Bachelor;s Degree in Information System - S.Si.</em></p>
-            <p>Grade: 3.66/4.00 - 5th semester (GPA)</p>
-          </div>
-        </div>
       </div>
     </div>
 
-
-    <div class="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2>Certifications</h2>
-        </div>
-
-        <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Menjadi Flutter Developer Expert</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>End certicateion item -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Menjadi Flutter Developer Intermediate</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>End certicateion item -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Fundamental Aplikasi Flutter </h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-flutter1.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Membuat Aplikasi Flutter untuk Pemula</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-flutter1.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/81P2N089YXOY" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-dart.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Memulai Pemrograman degan Dart</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-dart.png"
-                    data-gallery="certificateGallery" data-glightbox="type: image" class="portfolio-details-lightbox"><i
-                      class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/98XWVRNKLPM3" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/Dicoding.com-java.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Memulai Pemrograman degan Java</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/Dicoding.com-java.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/6RPNWJ2G4P2M" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-py.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Memulai Pemrograman degan Python</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-py.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/81P27G6YJZOY" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div> -->
-          <!-- End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/Dicoding.com-Solid.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Prinsip Pemrograman SOLID</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/Dicoding.com-Solid.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/NVP7890GOXR0" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-javascript.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Memulai Pemrograman Dengan JavaSript</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-javascript.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/53XEN6RM0XRN" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-sql.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Dasar Structured Query Language (SQL)</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-sql.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/2VX3JMN5JPYQ" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-
-           
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-belajarAi.png "class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Dasar AI</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-belajarAi.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/07Z6V7WEJXQRL" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End certicateion item -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-career-as-software-developer.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-career-as-software-developer.png"
-                    data-gallery="certificateGallery" data-glightbox="type: image" class="portfolio-details-lightbox"><i
-                      class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/81P23K1V8XOY" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>End certicateion item -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-career-as-software-developer.png" class="img-thumbnail"
-                alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Meniti Karier sebagai Software Developer</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-career-as-software-developer.png"
-                    data-gallery="certificateGallery" data-glightbox="type: image" class="portfolio-details-lightbox"><i
-                      class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/4EXG46Y1EPRL" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-github.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Dasar Git dengan GitHub</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-github.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/07Z6VDLEYXQR" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-
-          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/dicoding-ux.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Dicoding - Belajar Dasar UX Design</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/dicoding-ux.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.dicoding.com/certificates/" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>End certicateion item -->
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/certifications/gplay.png" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Google Play Academy - Store Listing Certificate</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/certifications/gplay.png" data-gallery="certificateGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                  <a href="https://www.credential.net/ee908239-7aae-4f78-8f80-bfd2db60ba9b" target="_blank"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div><!-- End certicateion item -->
-        </div>
-      </div>
-    </div>
-
-    <div class="portfolio">
-      <div class="container">
-        <div class="section-title">
-          <h2>Awards</h2>
-        </div>
-        
-        <!-- 
-        <div class="row portfolio-container" style="position: relative; height: 437.75px;">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/awards/bangkit-mentor.jpg" class="img-thumbnail" alt="">
-              <div class="portfolio-info">
-                <h4>Bangkit 2023 H1 - Mentor in Mobile Development Path</h4>
-                <div class="portfolio-links">
-                  <a href="assets/img/awards/bangkit-mentor.jpg" data-gallery="awardsGallery"
-                    data-glightbox="type: image" class="portfolio-details-lightbox"><i class="bx bx-zoom-in"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>  End Awards item -->
-        </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- End Education Section -->
-
-  <!-- ======= Resume/experiens  Section ======= -->
- <section id="resume" class="resume">
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Resume</h2>
-            <p>Check My Resume</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-6">
-                <h3 class="resume-title">Summary</h3>
-                <div class="resume-item pb-0">
-                    <h4>Muhammad Ilham Ghazali</h4>
-                    <p><em>Results-driven Junior Mobile Engineer with a passion for creating seamless, user-friendly experiences. Proficient in iOS and Android development, adept at troubleshooting, and committed to staying current with emerging mobile technologies.</em></p>
-                    <p>
-                    <ul>
-                        <li>Indonesia, Bogor, West Java</li>
-                        <li>m.ilhamghazali@gmail.com</li>
-                        <li>+62 813 1524 4423</li>
-                    </ul>
-                    </p>
-                </div>
-
-                <h3 class="resume-title">Education</h3>
-                <div class="resume-item">
-                    <h4>Undergraduate Information System</h4>
-                    <h5>Jan 2022 - Jan 2026</h5>
-                    <p><em>Universitas Gunadarma</em></p>
-                    <p>Achieved a GPA of 3.64, focusing on Database Management, Object-Oriented Programming, and Software Development Principles. Completed major projects including a Point of Sale (POS) Application and a BMI tracking web application.</p>
-                </div>
-                <div class="resume-item">
-                    <h4>Independent Study</h4>
-                    <h5>Jun 2023 - Present</h5>
-                    <p><em>Dicoding Academy</em></p>
-                    <p>Completed certifications in Dart programming, SOLID principles, and SQL. Developed multiple projects, such as an online attendance application and a POS system.</p>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <h3 class="resume-title">Professional Experience</h3>
-                <div class="resume-item">
-                    <h4>Assistant & Tutor</h4>
-                    <h5>Oct 2023 - Present</h5>
-                    <p><em>Information Systems Laboratory, Gunadarma</em></p>
-                    <ul>
-                        <li>Conducted tutorials on C programming language, improving student lab scores by 25%.</li>
-                        <li>Developed reusable instructional materials for future lab sessions.</li>
-                        <li>Provided technical support to optimize lab systems, reducing downtime by 15%.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section><!-- End Resume Section -->
-
-
-  <!-- ======= Services Section ======= -->
-  <section id="Project" class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Services</h2>
-        <p>My Services</p>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bxl-dribbble"></i></div>
-            <h4><a href="">Lorem Ipsum</a></h4>
-            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-file"></i></div>
-            <h4><a href="">Sed ut perspiciatis</a></h4>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-tachometer"></i></div>
-            <h4><a href="">Magni Dolores</a></h4>
-            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-world"></i></div>
-            <h4><a href="">Nemo Enim</a></h4>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-slideshow"></i></div>
-            <h4><a href="">Dele cardo</a></h4>
-            <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-          <div class="icon-box">
-            <div class="icon"><i class="bx bx-arch"></i></div>
-            <h4><a href="">Divera don</a></h4>
-            <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Services Section -->
-
-  <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio">
-    <div class="container">
-
-        <div class="section-title">
-            <h2>Portfolio</h2>
-            <p>My Works</p>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12 d-flex justify-content-center">
-                <ul id="portfolio-flters">
-                    <li data-filter="*" class="filter-active">All</li>
-                    <li data-filter=".filter-app">Mobile</li>
-                    <li data-filter=".filter-web">Web</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-            <!-- Point of Sale (POS) Application -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/pos-mobile.jpg" class="img-fluid" alt="POS Mobile">
-                    <div class="portfolio-info">
-                        <h4>Point of Sale (POS) - Mobile</h4>
-                        <p>Mobile Application</p>
-                        <div class="portfolio-links">
-                            <a href="assets/img/portfolio/pos-mobile.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Point of Sale - Mobile"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html#pos-mobile" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/pos-web.jpg" class="img-fluid" alt="POS Web">
-                    <div class="portfolio-info">
-                        <h4>Point of Sale (POS) - Web</h4>
-                        <p>Web Application (Admin Panel)</p>
-                        <div class="portfolio-links">
-                            <a href="assets/img/portfolio/pos-web.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Point of Sale - Web"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html#pos-web" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Online Attendance Application -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/attendance-mobile.jpg" class="img-fluid" alt="Attendance Mobile">
-                    <div class="portfolio-info">
-                        <h4>Online Attendance - Mobile</h4>
-                        <p>Mobile Application</p>
-                        <div class="portfolio-links">
-                            <a href="assets/img/portfolio/attendance-mobile.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Online Attendance - Mobile"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html#attendance-mobile" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                    <img src="assets/img/portfolio/attendance-web.jpg" class="img-fluid" alt="Attendance Web">
-                    <div class="portfolio-info">
-                        <h4>Online Attendance - Web</h4>
-                        <p>Web Application (Admin Panel)</p>
-                        <div class="portfolio-links">
-                            <a href="assets/img/portfolio/attendance-web.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Online Attendance - Web"><i class="bx bx-plus"></i></a>
-                            <a href="portfolio-details.html#attendance-web" class="portfolio-details-lightbox" title="Portfolio Details"><i class="bx bx-link"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap" style="background-color: #1a1a1a; border-radius: 15px; padding: 20px; color: white; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                  <!-- Gambar Utama -->
-                  <img src="assets\img\porto\lockfire.png" class="img-fluid" alt="LockFlare - cryptographic" style="border-radius: 10px; margin-bottom: 20px; width: 100%; height: 100%; object-fit: cover;">
-
-                  <div class="portfolio-info">
-                      <!-- Judul Proyek -->
-                      <h4 style="font-size: 1.5rem; font-weight: bold;">LockFlare - Flutter Cryptographic App</h4>
-
-                      <!-- Deskripsi Singkat -->
-                      <p style="font-size: 1.1rem; margin-bottom: 15px;">Flutter app to demonstrates cryptographic algorithms</p>
-
-                      <!-- Teknologi yang Digunakan (Max 3) -->
-                      <div>
-                          <span class="badge" style="font-size: 1rem; padding: 5px 10px; background-color: #61dafb; color: black; margin-right: 10px;">Flutter</span>
-                          <!-- <span class="badge" style="font-size: 1rem; padding: 5px 10px; background-color: #336791; color: white; margin-right: 10px;">PostgreSQL</span> -->
-                          <!-- <span class="badge" style="font-size: 1rem; padding: 5px 10px; background-color: #8cc84b; color: white;">Node.js</span> -->
-                      </div>
-
-                      <!-- Tombol View -->
-                      <div style="margin-top: 20px;">
-                          <a href="https://youtube.com/shorts/c0JhdmluhJc?si=SLZx66IYkRL2kasU" target="_blank" class="btn btn-light" style="text-decoration: none; padding: 8px 15px; border-radius: 5px; font-weight: bold; background-color: #007bff; color: white; transition: background-color 0.3s;">View</a>
-                      </div>
-                  </div>
-              </div>
-            </div>
-            <!--  -->
-            <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap" style="background-color: #1a1a1a; border-radius: 15px; padding: 20px; color: white; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-                  <!-- Gambar Utama -->
-                  <img src="assets\img\porto\tasks.png" class="img-fluid" alt="Taks - Firebase" style="border-radius: 10px; margin-bottom: 20px; width: 100%; height: 100%; object-fit: cover;">
-
-                  <div class="portfolio-info">
-                      <!-- Judul Proyek -->
-                      <h4 style="font-size: 1.5rem; font-weight: bold;">Task - Flutter Task App</h4>
-
-                      <!-- Deskripsi Singkat -->
-                      <p style="font-size: 1.1rem; margin-bottom: 15px;">Flutter app to Management tasks</p>
-
-                      <!-- Teknologi yang Digunakan (Max 3) -->
-                      <div>
-                          <span class="badge" style="font-size: 1rem; padding: 5px 10px; background-color: #61dafb; color: black; margin-right: 10px;">Flutter</span>
-                          <span class="badge" style="font-size: 1rem; padding: 5px 10px; background-color: #DD2C00; color: white; margin-right: 10px;">Firebase</span>
-                          <!-- <span class="badge" style="font-size: 1rem; padding: 5px 10px; background-color: #8cc84b; color: white;">Node.js</span> -->
-                      </div>
-
-                      <!-- Tombol View -->
-                      <div style="margin-top: 20px;">
-                          <a href="https://youtu.be/6mpTsdOo7ho?si=5xA0rYIlNt5Nna2g" target="_blank" class="btn btn-light" style="text-decoration: none; padding: 8px 15px; border-radius: 5px; font-weight: bold; background-color: #007bff; color: white; transition: background-color 0.3s;">View</a>
-                      </div>
-                  </div>
-              </div>
-            </div>
-
-            <!--  -->
-          </div>
-
-        </div>
-
-    </div>
-</section><!-- End Portfolio Section -->
-
-
-  <!-- ======= Contact Section ======= -->
-  <section id="contact" class="contact">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Contact Me</p>
-      </div>
-
-      <div class="row mt-2">
-
-        <!--
-       
-       
-       
-       
-       
-       
-       
-       
-       
- -->      
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <div class="social-links">
-              <a href="mailto:fachridantm@gmail.com" target="_blank">m.ilhamghazali@gmail.com</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <!-- <a href="https://twitter.com/" target="_blank" class="twitter"><i class="bi bi-twitter"></i>
-              </a> -->
-              <a href="https://www.instagram.com/ilham_ghaza/" target="_blank" class="instagram"><i class="bi bi-instagram"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/muhammadilhamghazali/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i>
-              </a>
-              <a href="https://github.com/IlhamGhaza" target="_blank" class="github"><i class="bi bi-github"></i></a>
-              <a href="mailto:milhamghazali@gmail.com" target="_blank" class="gmail"><i class="bi bi-envelope-fill"></i></a>
-            </div>
-          </div>
-        </div>
-
-<!-- 
-      <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
-        <div class="row">
-          <div class="col-md-6 form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-          </div>
-          <div class="col-md-6 form-group mt-3 mt-md-0">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-          </div>
-        </div>
-        <div class="form-group mt-3">
-          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="form-group mt-3">
-          <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-        </div>
-        <div class="my-3">
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your message has been sent. Thank you!</div>
-        </div>
-        <div class="text-center"><button type="submit">Send Message</button></div>
-      </form>
--->
-    </div>
-  </section><!-- End Contact Section -->
-
-  <div class="credits">
-    © <script>document.write(new Date().getFullYear())</script> M Ilham Ghazali. All rights reserved.
-  </div>
-
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script>
+      // Mobile navigation popup functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const popup = document.getElementById("simplePopup");
+        const closeBtn = document.querySelector(".close-btn");
+        const navToggle = document.querySelector(".mobile-nav-toggle");
+        const navLinks = document.querySelectorAll(".popup-nav-menu .nav-link");
+
+        const openPopup = () => {
+          popup.style.display = "flex";
+          document.body.style.overflow = "hidden"; // Prevent background scroll
+        };
+
+        const closePopup = () => {
+          popup.style.display = "none";
+          document.body.style.overflow = "auto"; // Restore background scroll
+        };
+
+        // Open popup when mobile nav toggle is clicked
+        if (navToggle) {
+          navToggle.addEventListener("click", openPopup);
+        }
+
+        // Close button
+        if (closeBtn) {
+          closeBtn.addEventListener("click", closePopup);
+        }
+
+        // Close when a nav link is clicked
+        navLinks.forEach((link) => {
+          link.addEventListener("click", closePopup);
+        });
+
+        // Close when clicking outside the popup box
+        window.addEventListener("mousedown", function (event) {
+          if (event.target === popup) {
+            closePopup();
+          }
+        });
+        // Restore scroll and fix layout bugs after closing
+        popup.addEventListener("transitionend", function () {
+          if (popup.style.display === "none") {
+            document.body.style.overflow = "auto";
+          }
+        });
+      });
+    </script>
+
+    <style>
+      .simple-popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2000;
+        justify-content: center;
+        align-items: center;
+        background: rgba(15, 23, 42, 0.7);
+        backdrop-filter: blur(16px) saturate(160%);
+        -webkit-backdrop-filter: blur(16px) saturate(160%);
+        overflow: hidden;
+      }
+      .simple-popup::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80vw;
+        height: 60vw;
+        max-width: 600px;
+        max-height: 400px;
+        background: radial-gradient(
+          circle,
+          rgba(24, 210, 110, 0.45) 0%,
+          rgba(24, 210, 110, 0.18) 40%,
+          transparent 80%
+        );
+        filter: blur(30px);
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        pointer-events: none;
+        animation: popup-glow 8s ease-in-out infinite alternate;
+      }
+      @keyframes popup-glow {
+        0% {
+          opacity: 0.6;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .popup-box {
+        background: rgba(26, 26, 46, 0.92);
+        backdrop-filter: blur(8px);
+        padding: 32px 28px 24px 28px;
+        border-radius: 20px;
+        width: 92vw;
+        max-width: 440px;
+        position: relative;
+        border: 1.5px solid #35e888;
+        box-shadow: 0 8px 60px 0 rgba(24, 210, 110, 0.15),
+          0 2px 20px 0 rgba(0, 0, 0, 0.15);
+        z-index: 2;
+        overflow: visible;
+      }
+      /* Remove previous .popup-box::before and @keyframes pulse */
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+      }
+
+      .popup-box h3 {
+        color: #35e888;
+        margin-top: 0;
+      }
+
+      .popup-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0 0 0;
+      }
+
+      .popup-box li {
+        padding: 0;
+      }
+
+      .popup-box li a {
+        display: block;
+        padding: 12px 15px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      .popup-box li a:hover {
+        background-color: rgba(53, 232, 136, 0.1);
+        color: #35e888;
+      }
+    </style>
+  </body>
 </html>
