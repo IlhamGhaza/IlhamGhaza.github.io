@@ -159,8 +159,8 @@
     typingElements.forEach((element, index) => {
       if (index < texts.length) {
         setTimeout(() => {
-          typeWriter(element, texts[index], 50);
-        }, index * 1000);
+          typeWriter(element, texts[index], 35);
+        }, index * 250);
       }
     });
   };
@@ -213,7 +213,7 @@
       bar.style.width = "0%";
       setTimeout(() => {
         bar.style.width = width;
-      }, 500);
+      }, 150);
     });
   };
 
@@ -225,17 +225,18 @@
     if (!portfolioContainer) return;
 
     // Create empty state element
-    // const emptyState = document.createElement("div");
-    // emptyState.className = "portfolio-empty-state";
-    // emptyState.innerHTML = `
-    //   <i class="ri-inbox-line"></i>
-    //   <h3>No Projects Found</h3>
-    //   <p>There are no projects in this category at the moment. Please check back later or view other categories.</p>
-    //   <button class="btn btn-outline" onclick="document.querySelector('#portfolio-flters li[data-filter=\"*\"]').click()">
-    //     <i class="ri-refresh-line"></i>
-    //     View All Projects
-    //   </button>
-    // `;
+    const emptyState = document.createElement("div");
+    emptyState.className = "portfolio-empty-state";
+    emptyState.style.display = "none";
+    emptyState.innerHTML = `
+      <i class="ri-inbox-line"></i>
+      <h3>No Projects Found</h3>
+      <p>There are no projects in this category at the moment. Please check back later or view other categories.</p>
+      <button class="btn btn-outline" onclick="document.querySelector('#portfolio-flters li[data-filter=\\'*\\']').click()">
+        <i class="ri-refresh-line"></i>
+        View All Projects
+      </button>
+    `;
 
     // Insert empty state after portfolio container
     portfolioContainer.parentNode.insertBefore(
@@ -377,7 +378,7 @@
 
     counters.forEach((counter) => {
       const target = parseInt(counter.getAttribute("data-count"));
-      const duration = 2000;
+      const duration = 1000;
       const step = target / (duration / 16);
       let current = 0;
 
@@ -513,19 +514,20 @@
    * Initialize all features
    */
   window.addEventListener("load", () => {
-    // Initialize AOS
+    // Initialize AOS with faster, snappier animations
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
+      duration: 450,
+      easing: "ease-out",
       once: true,
       mirror: false,
+      offset: 40,
     });
 
     // Initialize Pure Counter
     new PureCounter();
 
-    // Initialize typing animation
-    setTimeout(initTypingAnimation, 1000);
+    // Initialize typing animation with minimal delay
+    setTimeout(initTypingAnimation, 200);
 
     // Initialize parallax
     initParallax();
@@ -621,7 +623,8 @@
       align-items: center;
       justify-content: center;
       z-index: 9999;
-      transition: opacity 0.5s ease;
+      transition: opacity 0.25s ease;
+      pointer-events: none;
     `;
 
     const loaderContent = loader.querySelector(".loader-content");
@@ -632,13 +635,13 @@
 
     const spinner = loader.querySelector(".spinner");
     spinner.style.cssText = `
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       border: 3px solid rgba(24, 210, 110, 0.3);
       border-top: 3px solid #18d26e;
       border-radius: 50%;
-      animation: spin 1s linear infinite;
-      margin: 0 auto 20px;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
     `;
 
     const spinKeyframes = `
@@ -654,15 +657,23 @@
 
     document.body.appendChild(loader);
 
-    // Remove loader after page loads
-    window.addEventListener("load", () => {
+    // Remove loader promptly when page is ready
+    const hideLoader = () => {
+      loader.style.opacity = "0";
       setTimeout(() => {
-        loader.style.opacity = "0";
-        setTimeout(() => {
+        if (loader.parentNode) {
           loader.remove();
-        }, 500);
-      }, 1000);
-    });
+        }
+      }, 250);
+    };
+
+    if (document.readyState === "complete") {
+      setTimeout(hideLoader, 100);
+    } else {
+      window.addEventListener("load", () => {
+        setTimeout(hideLoader, 100);
+      });
+    }
   };
 
   // Add loading animation
