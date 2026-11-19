@@ -1184,7 +1184,6 @@ section {
   opacity: 1 !important;
   transform: none !important;
   float: none !important;
-  display: block !important;
 }
 
 /* Force portfolio cards to be full width of their container */
@@ -1829,3 +1828,109 @@ section {
   }
 }
 
+
+/* Mobile navigation popup */
+.simple-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  overflow: hidden;
+}
+.simple-popup::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 60vw;
+  max-width: 600px;
+  max-height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(24, 210, 110, 0.45) 0%,
+    rgba(24, 210, 110, 0.18) 40%,
+    transparent 80%
+  );
+  filter: blur(30px);
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+  animation: popup-glow 8s ease-in-out infinite alternate;
+}
+@keyframes popup-glow {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup-box {
+  background: rgba(26, 26, 46, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 32px 28px 24px 28px;
+  border-radius: 20px;
+  width: 92vw;
+  max-width: 440px;
+  position: relative;
+  border: 1.5px solid #35e888;
+  box-shadow:
+    0 8px 60px 0 rgba(24, 210, 110, 0.15),
+    0 2px 20px 0 rgba(0, 0, 0, 0.15);
+  z-index: 2;
+  overflow: visible;
+}
+/* Remove previous .popup-box::before and @keyframes pulse */
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-box h3 {
+  color: #35e888;
+  margin-top: 0;
+}
+
+.popup-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.popup-box li {
+  padding: 0;
+}
+
+.popup-box li a {
+  display: block;
+  padding: 12px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.popup-box li a:hover {
+  background-color: rgba(53, 232, 136, 0.1);
+  color: #35e888;
+}

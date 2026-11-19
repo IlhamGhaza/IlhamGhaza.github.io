@@ -679,3 +679,54 @@
   // Add loading animation
   addLoadingAnimation();
 })();
+
+/**
+ * Mobile navigation popup
+ */
+  // Mobile navigation popup functionality
+  document.addEventListener("DOMContentLoaded", function () {
+    const popup = document.getElementById("simplePopup");
+    const closeBtn = document.querySelector(".close-btn");
+    const navToggle = document.querySelector(".mobile-nav-toggle");
+    const navLinks = document.querySelectorAll(".popup-nav-menu .nav-link");
+
+    const openPopup = () => {
+      popup.style.display = "flex";
+      document.body.style.overflow = "hidden"; // Prevent background scroll
+    };
+
+    const closePopup = () => {
+      popup.style.display = "none";
+      document.body.style.overflow = "auto"; // Restore background scroll
+    };
+
+    // Open popup when mobile nav toggle is clicked
+    if (navToggle) {
+      navToggle.addEventListener("click", openPopup);
+    }
+
+    // Close button
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closePopup);
+    }
+
+    // Close when a nav link is clicked
+    navLinks.forEach((link) => {
+      link.addEventListener("click", closePopup);
+    });
+
+    // Close when clicking outside the popup box
+    window.addEventListener("mousedown", function (event) {
+      if (event.target === popup) {
+        closePopup();
+      }
+    });
+    // Restore scroll and fix layout bugs after closing
+    popup.addEventListener("transitionend", function () {
+      if (popup.style.display === "none") {
+        document.body.style.overflow = "auto";
+      }
+    });
+  });
+
+document.getElementById("year").textContent = new Date().getFullYear();
