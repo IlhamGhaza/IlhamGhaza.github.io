@@ -1,0 +1,85 @@
+/* Design tokens: Graphite & Brass (direction A).
+   Colour rule 60-30-10: --bg 60%, --surface/--text 30%, --accent 10% (CTA, links, focus, highlights only). */
+
+@font-face {
+  font-family: "Gloock";
+  src: url("../fonts/gloock-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/manrope-var.woff2") format("woff2");
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark;
+
+  /* Colour: semantic tokens (contrast vs --bg in comments) */
+  --bg: #15130f;            /* 60% dominant, warm near-black */
+  --surface: #1e1c18;       /* 30% cards, panels */
+  --surface-2: #26231e;     /* hover / pressed surface */
+  --text: #ece6db;          /* 14.94:1 on bg, 13.70:1 on surface */
+  --text-muted: #a59d8f;    /* 6.91:1 on bg, 6.33:1 on surface */
+  --border: #34302a;        /* decorative dividers only (1.42:1) */
+  --border-strong: #6b6457; /* control outlines, 3.3:1 on bg */
+  --accent: #c9a46b;        /* 10% brass: 7.96:1 on bg */
+  --accent-hover: #dcbd8a;  /* 10.33:1 on bg */
+  --on-accent: #15130f;     /* text on brass: 7.96:1 */
+  --paper: #e9e3d8;         /* frame behind the white-ground portrait */
+
+  /* Type: two families */
+  --font-display: "Gloock", "Iowan Old Style", Georgia, serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* Type scale: base 17px, ratio 1.25 (major third) */
+  --fs-sm: 0.85rem;    /* 13.6px meta */
+  --fs-base: 1.0625rem;/* 17px body */
+  --fs-md: 1.328rem;   /* 21.25px lead */
+  --fs-lg: 1.66rem;    /* 26.6px h3 */
+  --fs-xl: 2.075rem;   /* 33.2px h2 mobile */
+  --fs-2xl: 2.594rem;  /* 41.5px h2 desktop */
+  --fs-3xl: 3.242rem;  /* 51.9px h1 mobile */
+  --fs-4xl: 5.066rem;  /* 81px h1 desktop (step 7) */
+
+  --lh-body: 1.65;
+  --lh-tight: 1.05;
+  --measure: 65ch;
+
+  /* Spacing: 8pt system */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 16px;
+  --s-4: 24px;
+  --s-5: 32px;
+  --s-6: 48px;
+  --s-7: 64px;
+  --s-8: 96px;
+  --s-9: 128px;
+
+  /* Layout */
+  --container: 1200px;
+  --gutter: var(--s-3);
+  --radius: 2px;
+  --header-h: 64px;
+  --tap: 44px;
+
+  /* Motion */
+  --dur-fast: 150ms;
+  --dur: 220ms;
+  --dur-slow: 300ms;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  /* Layers */
+  --z-header: 100;
+  --z-menu: 200;
+  --z-skip: 1000;
+}
+
+@media (min-width: 48em) {
+  :root { --gutter: var(--s-6); --header-h: 72px; }
+}
